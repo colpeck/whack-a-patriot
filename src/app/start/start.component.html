@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div *ngIf="distance > 50">
+        <h2>You are {{ distance }} mile(s) from a New England Patriot.<br>It's safe to play this game.</h2>
+        <button type="button" class="btn btn-outline-primary btn-lg mt-3" (click)="start = true; clicked();">Start</button>
+      </div>
+      <div *ngIf="distance <= 50">
+        <h2>You are {{ distance }} mile(s) from a New England Patriot. It is not safe to play this game.</h2>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="start == true" class="mt-4">
+    <app-board [click]="click"></app-board>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-4">
+    <h2>Whack-a-Patriot!</h2>
+  </div>
+  <div class="col-4">
+    <h2>Points: {{ score | json }}</h2>
+  </div>
+  <div class="col-4">
+    <h2>Time Left: {{ time }}</h2>
+  </div>
+</div>
+<div class="row no-gutters hill-row">
+  <div class="col-4">
+    <div class="hole"></div>
+    <div class="{{ holeClasses['hole0'] }}" [ngClass]="holeName === 'hole0' ? 'up' : 'down'"></div>
+    <button class="hit" (click)="calculatePoints()" [disabled]="holeName !== 'hole0'" (click)="handleClick()"></button>
+  </div>
+  <div class="col-4">
+    <div class="hole"></div>
+    <div class="{{ holeClasses['hole1'] }}" [ngClass]="holeName === 'hole1' ? 'up' : 'down'"></div>
+    <button class="hit" (click)="calculatePoints()" [disabled]="holeName !== 'hole1'" (click)="handleClick()"></button>
+  </div>
+  <div class="col-4">
+    <div class="hole"></div>
+    <div class="{{ holeClasses['hole2'] }}" [ngClass]="holeName === 'hole2' ? 'up' : 'down'"></div>
+    <button class="hit" (click)="calculatePoints()" [disabled]="holeName !== 'hole2'" (click)="handleClick()"></button>
+  </div>
+  <div class="col-4">
+    <div class="hole"></div>
+    <div class="{{ holeClasses['hole3'] }}" [ngClass]="holeName === 'hole3' ? 'up' : 'down'"></div>
+    <button class="hit" (click)="calculatePoints()" [disabled]="holeName !== 'hole3'" (click)="handleClick()"></button>
+  </div>
+  <div class="col-4">
+    <div class="hole"></div>
+    <div class="{{ holeClasses['hole4'] }}" [ngClass]="holeName === 'hole4' ? 'up' : 'down'"></div>
+    <button class="hit" (click)="calculatePoints()" [disabled]="holeName !== 'hole4'" (click)="handleClick()"></button>
+  </div>
+  <div class="col-4">
+    <div class="hole"></div>
+    <div class="{{ holeClasses['hole5'] }}" [ngClass]="holeName === 'hole5' ? 'up' : 'down'"></div>
+    <button class="hit" (click)="calculatePoints()" [disabled]="holeName !== 'hole5'" (click)="handleClick()"></button>
+  </div>
+  <div class="col-4">
+    <div class="hole"></div>
+    <div class="{{ holeClasses['hole6'] }}" [ngClass]="holeName === 'hole6' ? 'up' : 'down'"></div>
+    <button class="hit" (click)="calculatePoints()" [disabled]="holeName !== 'hole6'" (click)="handleClick()"></button>
+  </div>
+  <div class="col-4">
+    <div class="hole"></div>
+    <div class="{{ holeClasses['hole7'] }}" [ngClass]="holeName === 'hole7' ? 'up' : 'down'"></div>
+    <button class="hit" (click)="calculatePoints()" [disabled]="holeName !== 'hole7'" (click)="handleClick()"></button>
+  </div>
+  <div class="col-4">
+    <div class="hole"></div>
+    <div class="{{ holeClasses['hole8'] }}" [ngClass]="holeName === 'hole8' ? 'up' : 'down'"></div>
+    <button class="hit" (click)="calculatePoints()" [disabled]="holeName !== 'hole8'" (click)="handleClick()"></button>
+  </div>
+</div>
